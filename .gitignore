@@ -1,3 +1,6 @@
 btctrade.egg-info/
 update\.sh
 __pycache__
+build/
+dist/
+__init__\.py
