@@ -19,7 +19,7 @@ Using
 <code>
   import btctrade
 
-  btc = btctrade.Btctrade('<public key>', '<private key>')
+  btc = btctrade.Btctrade('YOUR PUBLIC KEY', 'YOUR PRIVATE KEY')
 
   btc.get_my_orders('btc_uah')
 </code>
