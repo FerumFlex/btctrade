@@ -6,10 +6,6 @@
     :target: https://pypi.python.org/pypi/btctrade
     :alt: PyPi version
 
-.. image:: https://img.shields.io/pypi/status/btctrade.svg?maxAge=60
-    :target: https://pypi.python.org/pypi/btctrade
-    :alt: PyPi status
-
 About
 =====
 
