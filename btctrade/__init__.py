@@ -1,4 +1,4 @@
-__version__ = (0, 1, '5')
+__version__ = (0, 1, '6')
 
 
 import copy
@@ -77,11 +77,12 @@ class Btctrade(object):
 
         logger.info('Response status code {}, content {}'.format(result.content, result.status_code))
         if result.status_code != 200:
-            raise BtctradeException(result.content)
+            error = result.content.decode('utf8') if result.content else 'Error'
+            raise BtctradeException(error)
 
         try:
             data = result.json()
-        except Exception:
+        except (TypeError, ValueError):
             raise BtctradeException(result.content)
 
         if isinstance(data, dict):
